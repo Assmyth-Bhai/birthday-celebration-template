@@ -1,28 +1,29 @@
 /* Music Player */
 .music-toggle {
   position: fixed;
-  right: 20px;
-  top: 20px;
-  top: max(env(safe-area-inset-top, 20px), 20px);
-  z-index: 20;
-  background: rgba(255, 255, 255, 0.95);
+  right: 25px;
+  top: 25px;
+  top: max(env(safe-area-inset-top, 25px), 25px);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.98);
   color: #e91e63;
   border: 2px solid #e91e63;
-  padding: 10px 18px;
+  padding: 12px 20px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 0.95rem;
   font-weight: 600;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: all;
 }
 
 .music-toggle:hover {
   background: #e91e63;
   color: white;
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.3);
+  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
 }
 
 .music-toggle:active {
@@ -32,9 +33,9 @@
 /* Mobile responsive */
 @media (max-width: 600px) {
   .music-toggle {
-    right: 12px;
-    top: 12px;
-    top: max(env(safe-area-inset-top, 12px), 12px);
+    right: 15px;
+    top: 15px;
+    top: max(env(safe-area-inset-top, 15px), 15px);
     padding: 10px 16px;
     font-size: 0.9rem;
   }
@@ -42,9 +43,9 @@
 
 @media (max-width: 375px) {
   .music-toggle {
-    right: 10px;
-    top: 10px;
-    top: max(env(safe-area-inset-top, 10px), 10px);
+    right: 12px;
+    top: 12px;
+    top: max(env(safe-area-inset-top, 12px), 12px);
     padding: 8px 14px;
     font-size: 0.85rem;
   }

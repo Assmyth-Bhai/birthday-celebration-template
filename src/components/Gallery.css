@@ -1,6 +1,7 @@
 /* Gallery Section */
 .gallery {
   padding: 30px 20px;
+  padding-right: 20px;
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -11,22 +12,45 @@
   max-height: 100vh;
   max-height: 100dvh;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 50%, #ffd6eb 100%);
   position: relative;
 }
 
+/* Hide scrollbar but keep functionality */
+.gallery::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Decorative background elements */
 .gallery::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(233, 30, 99, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(255, 105, 180, 0.05) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(233, 30, 99, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 105, 180, 0.05) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -61,9 +85,7 @@
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 
-    0 10px 30px rgba(233, 30, 99, 0.15),
-    0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
   opacity: 0;
@@ -75,7 +97,7 @@
 
 /* Hover shimmer effect */
 .photos img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -100%;
   left: -100%;
@@ -110,8 +132,7 @@
 
 .photos img:hover {
   transform: translateY(-12px) scale(1.05) rotate(1deg);
-  box-shadow: 
-    0 20px 50px rgba(233, 30, 99, 0.35),
+  box-shadow: 0 20px 50px rgba(233, 30, 99, 0.35),
     0 10px 25px rgba(0, 0, 0, 0.2);
   z-index: 10;
   border-color: rgba(233, 30, 99, 0.6);
@@ -146,9 +167,7 @@
   max-width: 90%;
   max-height: 90%;
   border-radius: 16px;
-  box-shadow: 
-    0 25px 80px rgba(0, 0, 0, 0.6),
-    0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
   animation: zoomIn 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
   object-fit: contain;
 }
@@ -237,6 +256,7 @@
 @media (max-width: 768px) {
   .gallery {
     padding: 20px 15px;
+    padding-right: 15px;
     padding-top: max(env(safe-area-inset-top), 20px);
     padding-bottom: max(env(safe-area-inset-bottom), 20px);
   }
@@ -249,7 +269,7 @@
   .photos {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 0 15px;
+    padding: 0 10px;
     margin-bottom: 30px;
   }
 
@@ -307,9 +327,7 @@
 
   .photos img {
     border-radius: 14px;
-    box-shadow: 
-      0 8px 20px rgba(233, 30, 99, 0.12),
-      0 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.12), 0 3px 8px rgba(0, 0, 0, 0.1);
     border: 3px solid rgba(255, 255, 255, 0.8);
   }
 

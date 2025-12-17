@@ -12,6 +12,18 @@
   padding: 0;
 }
 
+/* Hide scrollbar globally */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
 /* Page transitions */
 .page {
   height: 100vh;
