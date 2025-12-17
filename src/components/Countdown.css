@@ -139,6 +139,37 @@
   }
 }
 
+/* Test Button */
+.test-button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #e91e63, #ff4081, #f50057);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.6);
+  background: linear-gradient(135deg, #f50057, #ff4081, #e91e63);
+}
+
+.test-button:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.5);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .countdown {
@@ -168,6 +199,12 @@
     font-size: 1.8rem;
     padding: 12px;
   }
+
+  .test-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 40px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -192,5 +229,11 @@
   .birthday-celebration {
     font-size: 1.5rem;
     padding: 10px;
+  }
+
+  .test-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    border-radius: 35px;
   }
 }

@@ -101,6 +101,13 @@ function Countdown({ onBirthdayReached, birthdayReached }) {
           prevValue={prevTime.seconds}
         />
       </div>
+      <button 
+        className="test-button" 
+        onClick={onBirthdayReached}
+        title="Skip countdown and see celebration"
+      >
+        🎉 Test Celebration
+      </button>
     </section>
   );
 }
