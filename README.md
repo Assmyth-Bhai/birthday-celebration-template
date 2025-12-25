@@ -21,14 +21,14 @@ Open `http://localhost:5173`
 **File:** `src/components/Countdown.jsx` (Line 21)
 
 ```javascript
-const targetDate = new Date("2025-12-18T00:00:00");
+const targetDate = new Date("2025-12-28T00:00:00");
 ```
 
 **Format Explanation:**
 ```
 "YYYY-MM-DDTHH:MM:SS"
  ↓    ↓  ↓  ↓  ↓  ↓
- Year Mo Day Hr Min Sec
+ 2025 12 28T00 00 00
 ```
 
 - **YYYY** = 4-digit year (2025, 2026, etc.)
@@ -70,9 +70,9 @@ const targetDate = new Date("2025-12-25T12:00:00");
 **File:** `src/components/MessageCard.jsx` (Lines 17-28)
 
 ```javascript
-const recipientName = "Divyanshi";
-const senderName = "Ashmit";
-const message = `Your message here...`;
+const recipientName = "💝Neha💝";
+const senderName = "Roshan";
+const message = `Happy birthday my dear princess love you sooo much gudiya......`;
 ```
 
 ---
