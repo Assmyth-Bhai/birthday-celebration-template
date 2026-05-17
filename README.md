@@ -27,7 +27,7 @@ Open `http://localhost:5173`
 **File:** `src/components/Countdown.jsx` (Line 21)
 
 ```javascript
-const targetDate = new Date("2025-12-18T00:00:00");
+const targetDate = new Date("2026-05-20T00:00:00");
 ```
 
 **Format Explanation:**
@@ -76,13 +76,20 @@ const targetDate = new Date("2025-12-25T12:00:00");
 **File:** `src/components/MessageCard.jsx` (Lines 17-28)
 
 ```javascript
-const recipientName = "Divyanshi";
-const senderName = "Ashmit";
-const message = `Your message here...`;
-```
+const recipientName = "Jasmi (Sanu)";
+const senderName = "Saney";
 
----
+const message = `Happy Birthday, my love! 🎂✨
 
+Every moment with you feels like it was always meant to be. From the quiet mornings to the late-night laughs, from the small gestures to the biggest dreams we share, you have filled my life in ways I never imagined.
+
+Being with you has taught me that love doesn't need to be loud to be true. It lives in the way our hands find each other, in the warmth of your voice when the world feels heavy, and in the simple comfort of knowing we belong to the same story, the same heartbeat.
+
+I love the way you see me—not just the parts I show the world, but the parts I hide, the soft, messy, silly parts. You accept them all, and in that acceptance, I find a home I never want to leave. You are my calm and my adventure, my laughter and my quiet reflection, my certainty and my wonder.
+
+Every day with you is a reminder that forever doesn't have to be far away—it's here, now, with you. On your birthday, and every single day that follows, my heart is yours—calm, unshakable, and endlessly grateful.
+
+May this year bring you as much pure joy, peace, and beautiful wonder as you bring into my life every single day. Happy Birthday, my beautiful girl. ❤️🥂`;
 ### 3. Photos
 
 Add 6 photos to `public/images/` named: `pic1.jpg` to `pic6.jpg`
