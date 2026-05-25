@@ -228,4 +228,4 @@ Refresh page (Ctrl + R)
 
 ---
 
-**Made with ❤️**
+**Made wi ❤️**
